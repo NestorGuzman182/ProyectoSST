@@ -34,7 +34,7 @@ function login(){
         alert("Usuario o contraseña no válida");
     } else{
         if(inputUser == respuesta.cc && inputPassword.toString() == '1234'){
-            alert("Login Exitoso")
+            window.open("views/home.html", "__self") ;
         } else{
             alert("usuario o contraseña no válida")
         }

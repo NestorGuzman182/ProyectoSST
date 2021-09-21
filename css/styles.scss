@@ -20,7 +20,10 @@
     padding: 0px;
     box-sizing: border-box
 }
-
+body{
+    height: 100vh;
+    width: 100%;
+}
 .limiter {
     width: 100%;
     margin: 0 auto
@@ -461,4 +464,169 @@ input {
         width: 80%;
         margin-top: 25%;
     }
+}
+
+
+/* nav */
+.header-nav{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+}
+.container-logo{
+    width: 290px;
+    display: flex;
+    align-items: center;
+}
+.container-logo img{
+    width: inherit;
+    padding: 10px;
+}
+.container-profile{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    .container-user{
+        font-size: 70px;
+        margin-left: 30px;
+    }
+}
+.bg-custom{
+    width: 100%;
+    background-color: #00CFC9;
+}
+.nav-frame{
+    max-height: 100vh !important;
+}
+.navbar{
+    flex-wrap: nowrap;
+}
+.navbar-nav{
+    width: 100%;
+    justify-content: space-evenly;
+}
+.nav-item{
+    font-family: 'Futura Book';
+    margin-right: 30px;
+    font-size: 25px;
+    letter-spacing: 2px;
+    :hover{
+        background-color: #008F8C;
+    }
+    :focus{
+        background-color: #008F8C;
+    }
+}
+.dropdown-menu{
+    background-color: #008F8C;
+    .dropdown-item{
+        color: #ffffff;
+        font-size: 21px;
+        font-family: 'Futura Book';
+        font-weight: 100;
+        border-bottom: 1px solid #ffffff;
+    }
+}
+
+/*  home */
+
+.banner{
+    width: 100%;
+    height: 60vh;
+    background: rgb(0,207,201);
+    .banner-img{
+        width: inherit;
+    }
+}
+.bnr-1{
+    background: linear-gradient(90deg, rgba(0,207,201,0.52) 0%, rgba(255,255,255,0) 80%), url(../assets/Images/Imagen-Banner-home.jpg);
+    background-size: cover;
+}
+
+.board{
+    position: relative;
+    top: -300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+.info{
+    color:#ffffff;
+    
+    .first-title{
+        font-weight: bolder;
+        font-family: 'Clarika';
+        font-size: 60px;
+    }.second-title{
+        font-family: 'Century Gothic';
+        font-weight: 300;
+        font-size: 50px;
+        letter-spacing: 5px;
+    }
+}
+.btn-info{
+    background-color: #ffffff;
+    color: #00CFC9;
+    font-family: 'Century Gothic';
+    font-size: 23px;
+    padding: 15px 45px;
+    border-radius: 25px;
+    text-decoration: none;
+}
+.btn-info:hover{
+        background: #008F8C;
+        color: #ffffff;
+}
+.btn-autorec{
+    width: 400px;
+    height: 40px;
+    background-image: url(../assets/icons/btn-autoreportesalud.png);
+    background-size: contain;
+}
+.container-main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    top: -250px;
+    .instruct{
+        height: 300px;
+        width: auto;
+    }
+}
+
+/* pausas activas */
+.bnr-2{
+    background: linear-gradient(90deg, rgba(0,207,201,0.52) 0%, rgba(255,255,255,0) 80%), url(../assets/Images/Imagen-banner_pausas.jpg);
+    background-size: cover;
+    width: 90%;
+    margin: auto;
+    background-position-y: center;
+}
+.btn-option{
+    position: relative;
+    bottom: -100px;
+    a{
+        img{
+            width: 182px;
+            margin-right:35px ;
+        }       
+    }
+}
+
+.bnr-3{
+    background: linear-gradient(90deg, rgba(0,207,201,0.52) 0%, rgba(255,255,255,0) 80%), url(../assets/Images/Imagen-BannerCap.jpg);
+    background-size: cover;
+    width: 90%;
+    margin: auto;
+    background-position-y: center;
+}
+.bnr-4{
+    background: linear-gradient(90deg, rgba(0,207,201,0.52) 0%, rgba(255,255,255,0) 80%), url(../assets/Images/smiling-woman-in-shirt-posing-in-studio.jpg);
+    background-size: cover;
+    width: 90%;
+    margin: auto;
+    background-position-y: center;
+    transform: scaleX(-1);
 }
