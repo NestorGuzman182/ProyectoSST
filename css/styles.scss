@@ -23,6 +23,7 @@
 body{
     height: 100vh;
     width: 100%;
+    overflow-x: hidden;
 }
 .limiter {
     width: 100%;
@@ -442,30 +443,6 @@ input {
     }
 }
 
-@media (min-width: 768px) {
-    .container {
-        min-width: 750px
-    }
-    .container-login{
-        display: flex !important;
-        min-height: 70vh;
-    }
-    #login .wrap-login100 {
-        padding: 27px
-    }
-    .banner-title{
-        padding-left: 10%;
-        padding-top: 27%;
-    }
-    .login_topimg .logo_wrap {
-        padding: 5px 55px
-    }
-    .login100-form{
-        width: 80%;
-        margin-top: 25%;
-    }
-}
-
 
 /* nav */
 .header-nav{
@@ -533,7 +510,7 @@ input {
 
 .banner{
     width: 100%;
-    height: 60vh;
+    height: 50vh;
     background: rgb(0,207,201);
     .banner-img{
         width: inherit;
@@ -563,6 +540,10 @@ input {
         font-weight: 300;
         font-size: 50px;
         letter-spacing: 5px;
+    }.parraf{
+        .parraf{
+            font-size: 40px;font-family: 'Futura Book'; max-width: 450px;
+        }
     }
 }
 .btn-info{
@@ -629,4 +610,76 @@ input {
     margin: auto;
     background-position-y: center;
     transform: scaleX(-1);
+}
+
+@media (min-width: 768px) {
+    .container {
+        min-width: 750px
+    }
+    .container-login{
+        display: flex !important;
+        min-height: 70vh;
+    }
+    #login .wrap-login100 {
+        padding: 27px
+    }
+    .banner-title{
+        padding-left: 10%;
+        padding-top: 27%;
+    }
+    .login_topimg .logo_wrap {
+        padding: 5px 55px
+    }
+    .login100-form{
+        width: 80%;
+        margin-top: 25%;
+    }
+   
+}
+@media (max-width: 768px){
+    #menu, .header-nav{
+        width: auto;
+        .container-user{
+            margin-left: 20px;
+        }
+    }
+    .navbar .container-fluid{
+        flex-direction: column;
+    }
+    .board{
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+        .info{
+            .first-title{
+                font-size: 30px;
+            }
+            .second-title{
+                font-size: 25px;
+            }
+            .parraf{
+                font-size: 25px;
+                text-shadow: #333333 .5px .5px .5px;
+            }
+        }.container-btn{
+            margin: 20px;
+        }
+        .btn-option{
+            text-align: end;
+            a img{
+                margin-bottom: 10px;
+            }
+        }
+    }
+    .instruct{ 
+        display: none;
+    } 
+    .container-main{
+        top: -180px;
+    }
+    .bnr-2, .bnr-3, .bnr-4{
+        width: 100%;
+    }
+  
+       
 }

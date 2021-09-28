@@ -28,6 +28,7 @@
 body {
   height: 100vh;
   width: 100%;
+  overflow-x: hidden;
 }
 
 .limiter {
@@ -461,32 +462,6 @@ input {
   font-family: 'Futura Book';
 }
 
-@media (min-width: 768px) {
-  .container {
-    min-width: 750px;
-  }
-  .container-login {
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
-    display: flex !important;
-    min-height: 70vh;
-  }
-  #login .wrap-login100 {
-    padding: 27px;
-  }
-  .banner-title {
-    padding-left: 10%;
-    padding-top: 27%;
-  }
-  .login_topimg .logo_wrap {
-    padding: 5px 55px;
-  }
-  .login100-form {
-    width: 80%;
-    margin-top: 25%;
-  }
-}
-
 /* nav */
 .header-nav {
   display: -webkit-box;
@@ -580,7 +555,7 @@ input {
 /*  home */
 .banner {
   width: 100%;
-  height: 60vh;
+  height: 50vh;
   background: #00cfc9;
 }
 
@@ -622,6 +597,12 @@ input {
   font-weight: 300;
   font-size: 50px;
   letter-spacing: 5px;
+}
+
+.info .parraf .parraf {
+  font-size: 40px;
+  font-family: 'Futura Book';
+  max-width: 450px;
 }
 
 .btn-info {
@@ -702,5 +683,82 @@ input {
   background-position-y: center;
   -webkit-transform: scaleX(-1);
           transform: scaleX(-1);
+}
+
+@media (min-width: 768px) {
+  .container {
+    min-width: 750px;
+  }
+  .container-login {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    min-height: 70vh;
+  }
+  #login .wrap-login100 {
+    padding: 27px;
+  }
+  .banner-title {
+    padding-left: 10%;
+    padding-top: 27%;
+  }
+  .login_topimg .logo_wrap {
+    padding: 5px 55px;
+  }
+  .login100-form {
+    width: 80%;
+    margin-top: 25%;
+  }
+}
+
+@media (max-width: 768px) {
+  #menu, .header-nav {
+    width: auto;
+  }
+  #menu .container-user, .header-nav .container-user {
+    margin-left: 20px;
+  }
+  .navbar .container-fluid {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .board {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 90%;
+    margin: auto;
+  }
+  .board .info .first-title {
+    font-size: 30px;
+  }
+  .board .info .second-title {
+    font-size: 25px;
+  }
+  .board .info .parraf {
+    font-size: 25px;
+    text-shadow: #333333 .5px .5px .5px;
+  }
+  .board .container-btn {
+    margin: 20px;
+  }
+  .board .btn-option {
+    text-align: end;
+  }
+  .board .btn-option a img {
+    margin-bottom: 10px;
+  }
+  .instruct {
+    display: none;
+  }
+  .container-main {
+    top: -180px;
+  }
+  .bnr-2, .bnr-3, .bnr-4 {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
