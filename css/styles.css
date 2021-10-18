@@ -25,6 +25,10 @@
           box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   height: 100vh;
   width: 100%;
@@ -504,6 +508,23 @@ input {
   margin-left: 30px;
 }
 
+.user-online {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.status {
+  width: 20px;
+  height: 20px;
+  background: green;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
 .bg-custom {
   width: 100%;
   background-color: #00CFC9;
@@ -701,6 +722,66 @@ iframe {
 
 .btn-secondary {
   background-color: #00CFC9;
+}
+
+.body-emergencias, .body-covid {
+  max-width: 870px;
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  background-color: #008F8C;
+  color: #FFFFFF;
+}
+
+.menu-module {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.menu-module li {
+  list-style: none;
+  margin: 15px 0;
+}
+
+.menu-module li a {
+  padding-bottom: 5px;
+  margin: 15px 0;
+  font-family: 'Futura Book';
+  letter-spacing: 2px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.menu-module li a:focus {
+  border-bottom: 3px solid #ffffff;
+}
+
+.module-title {
+  text-align: center;
+  font-family: 'Clarika';
+}
+
+#container-emergencias {
+  position: relative;
+  top: -300px;
+}
+
+.container-emergencias {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#container-emergencias-info {
+  padding-left: 40px;
+  padding-top: 20px;
+  font-family: 'Futura Book BT';
+  letter-spacing: 2px;
 }
 
 @media (min-width: 768px) {

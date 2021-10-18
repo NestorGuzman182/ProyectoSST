@@ -1,6 +1,7 @@
 
 var loginBtn = document.getElementById('login-btn').addEventListener("click", login);
 var message = document.getElementById('message');
+var inputUser = "";
 
 /* localStorage.setItem('usuario', inputUser);
 localStorage.setItem('contraseña', inputPassword); */
@@ -25,14 +26,14 @@ let users = [
 ]
 
 function login(){
-    var inputUser = document.getElementById('user').value;
+    inputUser = document.getElementById('user').value;
     var inputPassword = document.getElementById('password').value;
     var respuesta = users.find(x => x.cc == inputUser);
-    
 
     if(respuesta == undefined){
         alert("Usuario o contraseña no válida");
     } else{
+        localStorage.setItem('usuarioNombre', respuesta.name);
         if(inputUser == respuesta.cc && inputPassword.toString() == '1234'){
             window.open("views/home.html", "__self") ;
         } else{
@@ -43,3 +44,4 @@ function login(){
 }
 
 
+document.getElementById('username').innerHTML = localStorage.usuarioNombre;
