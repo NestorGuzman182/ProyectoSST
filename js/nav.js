@@ -8,8 +8,18 @@ setTimeout(() => {
     document.getElementById('username').innerHTML = localStorage.usuarioNombre;
 }, 1000);
 
-
-
+function loadPausasMentales(){
+    $("#container-pausasactivas").load("../views/pausasactivas/pausasmentales.html");
+}
+function loadAdivinanza(){
+    $("#container-pausas-info").load("../views/pausasactivas/adivinanza.html");
+}
+function loadSopaLetras(){
+    $("#container-pausas-info").load("../views/pausasactivas/sopadeletras.html");
+}
+function loadEncuentraPalabra(){
+    $("#container-pausas-info").load("../views/pausasactivas/encuentrapalabra.html");
+}
 function loadEmergencias() {
     $("#container-emergencias").load("../views/tipsSST/emergencias.html"); 
     setTimeout(() => {

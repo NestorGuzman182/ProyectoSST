@@ -671,7 +671,7 @@ iframe{
     text-align: center;
     font-family:'Clarika';
 }
-#container-emergencias, #container-capacitaciones{
+#container-emergencias, #container-capacitaciones, #container-pausasactivas{
     position: relative;
     top:-300px;
 }
@@ -680,7 +680,7 @@ iframe{
     /*width: fit-content;*/
     margin-bottom: 50px;
 }
-#container-emergencias-info, #container-capacitaciones-info{
+#container-emergencias-info, #container-capacitaciones-info, #container-pausas-info{
     padding-left: 40px;
     padding-top: 20px;
     font-family : 'Futura Book BT';
