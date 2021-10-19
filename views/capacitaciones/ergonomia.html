@@ -1,0 +1,28 @@
+<div class="body-manejoestres">
+    <h3 class="module-title">ERGONOMÍA</h3>
+    <div class="container-capacitaciones">
+        <nav id="nav-capacitaciones"></nav>
+        <div class="container-capacitacioness" id="container-capacitaciones-info"></div>
+    </div>
+    <div class="modal fade" id="evaluacionManejo" tabindex="-1" aria-hidden="true" aria-labelledby="modalTitle">
+        <div class="modal-dialog evaluacion">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Evalúa lo aprendio</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body evaluacion-container">
+              <iframe src="https://forms.gle/GF9vD9U9DkReXWUy6" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hecho</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="btn-evaluacion" href="#" data-bs-toggle="modal" data-bs-target="#evaluacionManejo">Evaluación</a> 
+    <p style="font-family:'Futura Book BT'; font-size:13px; padding-top:30px; letter-spacing: 1.5px;">Bibliografia MinTIC, & MinTrabajo. (2008). Libro Blanco, el ABC del Teletrabajo en Colombia.</p>
+</div>
+<script>
+    $("#nav-capacitaciones").load("../views/capacitaciones/nav-ergonomia.html");
+</script>

@@ -83,3 +83,27 @@ function loadRiesgos(){
 function loadIncendios(){
     $("#container-capacitaciones-info").load("../views/capacitaciones/incendios.html");
 }
+function loadErgonomia(){
+    $("#container-capacitaciones").load("../views/capacitaciones/ergonomia.html"); 
+    setTimeout(() => {
+        loadErgonomiaDef();
+    }, 200);
+}
+function loadErgonomiaDef(){
+    $("#container-capacitaciones-info").load("../views/capacitaciones/ergonomiadef.html");
+}
+function loadPc(){
+    $("#container-capacitaciones-info").load("../views/capacitaciones/pc.html");
+}
+function loadDesk(){
+    $("#container-capacitaciones-info").load("../views/capacitaciones/desk.html");
+}
+function loadSilla(){
+    $("#container-capacitaciones-info").load("../views/capacitaciones/silla.html");
+}
+function loadTimeOptime(){
+    $("#container-capacitaciones-info").load("../views/capacitaciones/timeoptime.html");
+}
+function loadPostura(){
+    $("#container-capacitaciones-info").load("../views/capacitaciones/postura.html");
+}
