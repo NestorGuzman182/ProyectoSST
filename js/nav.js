@@ -28,10 +28,46 @@ function loadCovid() {
 }
 function loadEstrestiempo(){
     $("#container-capacitaciones").load("../views/capacitaciones/manejoestrestiempo.html"); 
+    setTimeout(() => {
+        loadEstres();
+    }, 200);
 }
 function loadEstres(){
     $("#container-capacitaciones-info").load("../views/capacitaciones/estres.html"); 
 }
 function loadTiempo(){
     $("#container-capacitaciones-info").load("../views/capacitaciones/tiempo.html");
+}
+function loadPeligros(){
+    $("#container-capacitaciones").load("../views/capacitaciones/peligros.html"); 
+    setTimeout(() => {
+        loadPeligrosriesgos();
+    }, 200);
+}
+function loadPeligrosriesgos(){
+    $("#container-capacitaciones-info").load("../views/capacitaciones/peligroyriesgo.html");
+}
+function loadIdentificacion(){
+    $("#container-capacitaciones-info").load("../views/capacitaciones/identificacion.html");
+}
+function loadTiposPeligro(){
+    $("#container-capacitaciones-info").load("../views/capacitaciones/tipospeligro.html");
+}
+function loadControlPeligro(){
+    $("#container-capacitaciones-info").load("../views/capacitaciones/controlpeligro.html");
+}
+function loadNivelCon(){
+    $("#container-capacitaciones-info").load("../views/capacitaciones/nivelcon.html");
+}
+function loadPrevencion(){
+    $("#container-capacitaciones-info").load("../views/capacitaciones/prevencion.html");
+}
+function load5s(){
+    $("#container-capacitaciones-info").load("../views/capacitaciones/5s.html");
+}
+function loadRiesgos(){
+    $("#container-capacitaciones-info").load("../views/capacitaciones/riesgos.html");
+}
+function loadIncendios(){
+    $("#container-capacitaciones-info").load("../views/capacitaciones/incendios.html");
 }

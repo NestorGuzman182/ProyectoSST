@@ -640,7 +640,7 @@ iframe{
 }
 .body-emergencias, .body-covid, .body-manejoestres{
     max-width: 870px;
-    width:80%;
+    width:100%;
     margin: auto;
     padding:20px;
     background-color: #008F8C;
@@ -650,6 +650,7 @@ iframe{
 .menu-module{
     display: flex;
     flex-direction: column;
+    max-width:fit-content;
     li{
         list-style: none;
         margin: 15px 0;
@@ -661,7 +662,7 @@ iframe{
             text-decoration: none;
             color:#ffffff;
         }
-        a:focus{
+        a:focus-within    {
             border-bottom: 3px solid #ffffff;
         }
     }
@@ -676,12 +677,34 @@ iframe{
 }
 .container-emergencias, .container-capacitaciones{
     display: flex;
+    margin-bottom: 50px;
 }
 #container-emergencias-info, #container-capacitaciones-info{
     padding-left: 40px;
     padding-top: 20px;
     font-family : 'Futura Book BT';
     letter-spacing: 2px;
+}
+article{
+    max-width: 550px;
+}
+.btn-evaluacion{
+    background: #808080;
+    color:#ffffff;
+    margin: 30px;
+    padding: 5px 10px;
+    text-decoration: none;
+    border: 1.5px solid #212529;
+}
+.btn-evaluacion:hover{
+    color:#ffffff;
+}
+.evaluacion{
+    max-width: 100%;
+    max-height: 100%;
+}
+.evaluacion-container iframe{
+    height: 90vh;
 }
 
 @media (min-width: 768px) {
