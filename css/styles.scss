@@ -677,6 +677,7 @@ iframe{
 }
 .container-emergencias, .container-capacitaciones{
     display: flex;
+    /*width: fit-content;*/
     margin-bottom: 50px;
 }
 #container-emergencias-info, #container-capacitaciones-info{

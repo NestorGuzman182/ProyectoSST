@@ -12,7 +12,9 @@ setTimeout(() => {
 
 function loadEmergencias() {
     $("#container-emergencias").load("../views/tipsSST/emergencias.html"); 
-    loadSismo();
+    setTimeout(() => {
+        loadSismo();
+    }, 200);
 }
 function loadSismo() {
     $("#container-emergencias-info").load("../views/tipsSST/sismo.html"); 

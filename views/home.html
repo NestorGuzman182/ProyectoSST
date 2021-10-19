@@ -20,7 +20,23 @@
         </div>
     </div>
     <div class="container-main">
-        <a href="#"><img class="btn-autorec" alt=""></a>
+        <a href="#"><img class="btn-autorec" alt="" data-bs-toggle="modal" data-bs-target="#evaluacionManejo"></a>
+        <div class="modal fade" id="evaluacionManejo" tabindex="-1" aria-hidden="true" aria-labelledby="modalTitle">
+            <div class="modal-dialog evaluacion">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Autoreporte de Salud</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body evaluacion-container">
+                  <iframe src="https://forms.gle/kon2cFtkXYDzCzgX7" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hecho</button>
+                </div>
+              </div>
+            </div>
+          </div>
         <img class="instruct" src="../assets/icons/img-sst1.png" alt="">
     </div>
 </body>

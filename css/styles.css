@@ -778,6 +778,7 @@ iframe {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  /*width: fit-content;*/
   margin-bottom: 50px;
 }
 
