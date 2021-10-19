@@ -638,7 +638,7 @@ iframe{
 .btn-secondary{
     background-color: #00CFC9;
 }
-.body-emergencias, .body-covid{
+.body-emergencias, .body-covid, .body-manejoestres{
     max-width: 870px;
     width:80%;
     margin: auto;
@@ -670,14 +670,14 @@ iframe{
     text-align: center;
     font-family:'Clarika';
 }
-#container-emergencias{
+#container-emergencias, #container-capacitaciones{
     position: relative;
     top:-300px;
 }
-.container-emergencias{
+.container-emergencias, .container-capacitaciones{
     display: flex;
 }
-#container-emergencias-info{
+#container-emergencias-info, #container-capacitaciones-info{
     padding-left: 40px;
     padding-top: 20px;
     font-family : 'Futura Book BT';

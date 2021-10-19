@@ -26,3 +26,12 @@ function loadBotiquin(){
 function loadCovid() {
     $("#container-emergencias").load("../views/tipsSST/covid.html"); 
 }
+function loadEstrestiempo(){
+    $("#container-capacitaciones").load("../views/capacitaciones/manejoestrestiempo.html"); 
+}
+function loadEstres(){
+    $("#container-capacitaciones-info").load("../views/capacitaciones/estres.html"); 
+}
+function loadTiempo(){
+    $("#container-capacitaciones-info").load("../views/capacitaciones/tiempo.html");
+}
