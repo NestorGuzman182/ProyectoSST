@@ -107,3 +107,24 @@ function loadTimeOptime(){
 function loadPostura(){
     $("#container-capacitaciones-info").load("../views/capacitaciones/postura.html");
 }
+function loadSst(){
+    $("#container-capacitaciones").load("../views/capacitaciones/sst.html"); 
+    setTimeout(() => {
+        loadQuesst();
+    }, 200);
+}
+function loadQuesst(){
+    $("#container-capacitaciones-info").load("../views/capacitaciones/SST/quesst.html");
+}
+function loadParaqsst(){
+    $("#container-capacitaciones-info").load("../views/capacitaciones/SST/paraqsst.html");
+}
+function loadSgsst(){
+    $("#container-capacitaciones-info").load("../views/capacitaciones/SST/sgsst.html");
+}
+function loadEstandares(){
+    $("#container-capacitaciones-info").load("../views/capacitaciones/SST/estandares.html");
+}
+function loadFases(){
+    $("#container-capacitaciones-info").load("../views/capacitaciones/SST/fases.html");
+}
