@@ -448,6 +448,17 @@ input {
 
 
 /* nav */
+.container__home--buton{
+    width: 100px;
+    text-align: center;
+}
+.container__home--buton:hover{
+    background-color: #008F8C;
+}
+a i {
+    color: #ffffff;
+    font-size: 25px;
+}
 .header-nav{
     display: flex;
     width: 80%;
@@ -731,6 +742,12 @@ article{
         margin-top: 25%;
     }
    
+}
+
+form input{
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 10px;
 }
 @media (max-width: 768px){
     #menu, .header-nav{

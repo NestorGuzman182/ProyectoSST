@@ -128,3 +128,12 @@ function loadEstandares(){
 function loadFases(){
     $("#container-capacitaciones-info").load("../views/capacitaciones/SST/fases.html");
 }
+function loadVentajas(){
+    $("#container-capacitaciones-info").load("../views/capacitaciones/SST/ventajas.html");
+}
+function loadRespemp(){
+    $("#container-capacitaciones-info").load("../views/capacitaciones/SST/respemp.html");
+}
+function loadResptra(){
+    $("#container-capacitaciones-info").load("../views/capacitaciones/SST/resptra.html");
+}
