@@ -137,3 +137,9 @@ function loadRespemp(){
 function loadResptra(){
     $("#container-capacitaciones-info").load("../views/capacitaciones/SST/resptra.html");
 }
+
+setInterval(() => {
+    alert("No olvides realizar tus pausas activas recuerda que sirven para recuperar energía, mejorar el desempeño y eficiencia en el trabajo")
+}, 16000000);
+
+
